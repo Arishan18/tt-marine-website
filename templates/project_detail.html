@@ -1,0 +1,573 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project_title }} - T&T Marine Projects{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="bg-white rounded-lg shadow-md p-6 mb-8" data-animate>
+    <div class="flex items-center text-gray-500 text-sm mb-2">
+        <a href="/" class="hover:text-primary">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/projects" class="hover:text-primary">Projects</a>
+        <span class="mx-2">/</span>
+        <span>{{ project_title }}</span>
+    </div>
+    <h1 class="text-3xl font-bold text-primary">{{ project_title }}</h1>
+    <p class="text-gray-600">Detailed project overview and accomplishments</p>
+</div>
+
+{% if project_name == 'durban-beach-feeding-scheme' %}
+<!-- Project Overview -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <div class="flex flex-col md:flex-row">
+        <div class="md:w-2/3 mb-6 md:mb-0 md:pr-8">
+            <h2 class="text-2xl font-bold text-primary mb-4">Project Overview</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+                The Durban Beach Feeding Scheme is a critical environmental and infrastructure project aimed at maintaining the iconic beaches of Durban. T&T Marine has been responsible for supplying, commissioning, and managing the pumping of sand along the Durban beachfront to replenish sand removed by wave action.
+            </p>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+                This ongoing project plays a vital role in preserving the coastal environment, protecting beachfront infrastructure, and maintaining the recreational and tourism value of Durban's beaches. Our comprehensive approach ensures continuous sand replenishment even during challenging weather conditions.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                The project involves complex technical considerations, including pipeline design, pump station configuration, and monitoring systems to ensure optimal sand distribution along the beachfront. Our expertise in marine operations and dredging has been instrumental in the success of this long-term project.
+            </p>
+        </div>
+        <div class="md:w-1/3">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+Project" alt="Durban Beach Feeding Scheme" class="w-full h-auto rounded-lg shadow-md mb-4">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Beach+Pumping+Operation" alt="Beach Pumping Operation" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
+<!-- Project Details -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Project Details</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Scope of Work</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Design and Installation:</span>
+                        <p class="text-gray-700">Design, supply, and installation of sand pumping systems along the Durban beachfront.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Continuous Operation:</span>
+                        <p class="text-gray-700">Ongoing management of the sand pumping operation to ensure consistent beach replenishment.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Monitoring:</span>
+                        <p class="text-gray-700">Regular monitoring of sand distribution, beach profiles, and system performance.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Maintenance:</span>
+                        <p class="text-gray-700">Regular maintenance of pumping equipment, pipelines, and associated infrastructure.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Environmental Management:</span>
+                        <p class="text-gray-700">Implementation of environmental monitoring and management practices to minimize ecological impact.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Project Highlights</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Continuous Operation:</span>
+                        <p class="text-gray-700">Maintained uninterrupted sand pumping operations despite challenging weather conditions and technical challenges.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Beach Preservation:</span>
+                        <p class="text-gray-700">Successfully maintained the beach profile and width, preserving the recreational and tourism value of Durban's beaches.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Infrastructure Protection:</span>
+                        <p class="text-gray-700">Protected valuable beachfront infrastructure from erosion and wave damage through effective sand management.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Minimal Environmental Impact:</span>
+                        <p class="text-gray-700">Implemented environmentally sensitive practices to minimize disturbance to marine ecosystems and coastal processes.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Technical Innovation:</span>
+                        <p class="text-gray-700">Developed innovative solutions to optimize sand distribution and system efficiency throughout the project duration.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Project Gallery -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Project Gallery</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+1" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+2" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+3" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+4" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+5" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Durban+Beach+6" alt="Durban Beach Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+    </div>
+</section>
+
+<!-- Technical Specifications -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Technical Specifications</h2>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="py-3 px-4 font-semibold text-gray-800 border-b">Specification</th>
+                    <th class="py-3 px-4 font-semibold text-gray-800 border-b">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Pumping Capacity</td>
+                    <td class="py-3 px-4">Up to 350 cubic meters per hour</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Pipeline Length</td>
+                    <td class="py-3 px-4">1.2 kilometers total length</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Pipeline Diameter</td>
+                    <td class="py-3 px-4">350mm high-density polyethylene</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Power Requirements</td>
+                    <td class="py-3 px-4">450 kW total installed power</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Monitoring Systems</td>
+                    <td class="py-3 px-4">Real-time flow and pressure monitoring with remote access capabilities</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Sand Composition</td>
+                    <td class="py-3 px-4">Medium to fine grain sand, compatible with existing beach profile</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Discharge Points</td>
+                    <td class="py-3 px-4">Multiple discharge points along the beachfront for optimal sand distribution</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Client Testimonial -->
+<section class="bg-primary text-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/4 mb-6 md:mb-0 text-center">
+            <div class="w-24 h-24 bg-white rounded-full mx-auto flex items-center justify-center">
+                <svg class="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="md:w-3/4">
+            <blockquote class="text-xl italic">
+                "The Durban Beach Feeding Scheme has been instrumental in preserving our iconic beachfront. T&T Marine's expertise and dedication have ensured the continued success of this critical project, protecting both our natural environment and tourism infrastructure."
+            </blockquote>
+            <div class="mt-4">
+                <p class="font-bold">Client Representative</p>
+                <p>Durban Metropolitan Municipality</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Projects -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Related Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Related Project 1 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Richards+Bay" alt="Richards Bay Salvage" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Richards Bay (Salvage)</h3>
+                <p class="text-gray-700 mb-4">Assisted in the removal of coal from the Richards Bay Wreck Dredge, demonstrating our salvage capabilities.</p>
+                <a href="/projects/richards-bay-salvage" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+        
+        <!-- Related Project 2 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Walvis+Bay" alt="Walvis Bay" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Walvis Bay</h3>
+                <p class="text-gray-700 mb-4">Harbor dredging and channel maintenance to enhance port accessibility and operational capacity.</p>
+                <a href="/projects/walvisbaai" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+        
+        <!-- Related Project 3 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Vaal+Project" alt="Vaal Project" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Vaal Project</h3>
+                <p class="text-gray-700 mb-4">Specialized trenching for a pump station intake using a long reach excavator on a hydraulic barge.</p>
+                <a href="/projects/vaal-project" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-white rounded-lg shadow-md p-8 text-center" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-4">Interested in Similar Solutions?</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+        Contact our team to discuss how T&T Marine can bring our project expertise to your next dredging, harbor construction, or land reclamation initiative.
+    </p>
+    <div>
+        <a href="/contact" class="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4">
+            Contact Us
+        </a>
+        <a href="/services" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300">
+            View Our Services
+        </a>
+    </div>
+</section>
+
+{% elif project_name == 'koeberg-power-station' %}
+<!-- Project Overview -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <div class="flex flex-col md:flex-row">
+        <div class="md:w-2/3 mb-6 md:mb-0 md:pr-8">
+            <h2 class="text-2xl font-bold text-primary mb-4">Project Overview</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+                The Koeberg Nuclear Power Station project involved specialized dredging operations at the main intake basin of South Africa's only nuclear power plant. This critical infrastructure project required exceptional precision, stringent safety protocols, and minimal disruption to the power station's operations.
+            </p>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+                T&T Marine was selected for this high-profile project due to our expertise in specialized dredging operations and our proven track record of successful projects in sensitive environments. The project's primary objective was to restore the intake basin to its original design specifications, ensuring optimal water flow for the power station's cooling systems.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                The project presented unique challenges due to the critical nature of the facility and the strict regulatory requirements associated with operations at a nuclear power plant. Our team implemented comprehensive safety and quality control measures throughout the project to ensure full compliance with all requirements while delivering exceptional results.
+            </p>
+        </div>
+        <div class="md:w-1/3">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+Power+Station" alt="Koeberg Power Station" class="w-full h-auto rounded-lg shadow-md mb-4">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Dredging+Operations" alt="Dredging Operations" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
+<!-- Project Details -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Project Details</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Scope of Work</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Pre-Dredging Survey:</span>
+                        <p class="text-gray-700">Comprehensive bathymetric survey to assess sediment accumulation and establish baseline conditions.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Dredging Operations:</span>
+                        <p class="text-gray-700">Precise dredging of the main intake basin to restore original design specifications and ensure optimal water flow.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Sediment Management:</span>
+                        <p class="text-gray-700">Responsible handling and disposal of dredged materials in accordance with environmental regulations.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Environmental Monitoring:</span>
+                        <p class="text-gray-700">Continuous monitoring of water quality and environmental parameters during dredging operations.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Post-Dredging Survey:</span>
+                        <p class="text-gray-700">Final bathymetric survey to verify achievement of design specifications and document completed work.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Project Achievements</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Safety Excellence:</span>
+                        <p class="text-gray-700">Completed the entire project with zero safety incidents, despite the high-risk environment of a nuclear facility.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Operational Continuity:</span>
+                        <p class="text-gray-700">Maintained uninterrupted power station operations throughout the dredging project.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Environmental Compliance:</span>
+                        <p class="text-gray-700">Met or exceeded all environmental requirements and maintained excellent water quality throughout the project.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Ahead of Schedule:</span>
+                        <p class="text-gray-700">Completed the project ahead of the planned timeline, minimizing the operational impact on the power station.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-semibold text-gray-800">Performance Improvement:</span>
+                        <p class="text-gray-700">Enhanced cooling water flow efficiency by restoring the intake basin to optimal design specifications.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Project Gallery -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Project Gallery</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+1" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+2" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+3" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+4" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+5" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+        <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Koeberg+6" alt="Koeberg Project" class="w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity">
+    </div>
+</section>
+
+<!-- Technical Specifications -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Technical Specifications</h2>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="py-3 px-4 font-semibold text-gray-800 border-b">Specification</th>
+                    <th class="py-3 px-4 font-semibold text-gray-800 border-b">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Total Dredged Volume</td>
+                    <td class="py-3 px-4">Approximately 15,000 cubic meters</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Dredging Equipment</td>
+                    <td class="py-3 px-4">Specialized cutting suction dredger with environmental controls</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Dredging Depth</td>
+                    <td class="py-3 px-4">Up to 8 meters below water level</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Material Type</td>
+                    <td class="py-3 px-4">Predominantly fine silt and sand with some marine growth</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Precision Requirement</td>
+                    <td class="py-3 px-4">±10cm vertical tolerance from design specifications</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Project Duration</td>
+                    <td class="py-3 px-4">3 months (completed 2 weeks ahead of schedule)</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="py-3 px-4 font-medium">Environmental Monitoring</td>
+                    <td class="py-3 px-4">Continuous turbidity, pH, and temperature monitoring</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Client Testimonial -->
+<section class="bg-primary text-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/4 mb-6 md:mb-0 text-center">
+            <div class="w-24 h-24 bg-white rounded-full mx-auto flex items-center justify-center">
+                <svg class="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="md:w-3/4">
+            <blockquote class="text-xl italic">
+                "T&T Marine demonstrated exceptional professionalism and technical expertise throughout the Koeberg intake basin dredging project. Their commitment to safety, environmental compliance, and operational excellence exceeded our expectations. We were particularly impressed with their ability to complete this complex project ahead of schedule while maintaining the highest standards of quality."
+            </blockquote>
+            <div class="mt-4">
+                <p class="font-bold">Project Manager</p>
+                <p>Eskom, Koeberg Nuclear Power Station</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Projects -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-6">Related Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Related Project 1 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Grootvlei" alt="Grootvlei" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Grootvlei (Eskom)</h3>
+                <p class="text-gray-700 mb-4">Removing reeds from ash dams and dredging excess ash using amphibious excavators.</p>
+                <a href="/projects/grootvlei" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+        
+        <!-- Related Project 2 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Camden" alt="Camden Power Station" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Camden Power Station</h3>
+                <p class="text-gray-700 mb-4">Dredging the dam to return it to original design levels, with material removal and loading onto dump trucks.</p>
+                <a href="/projects/camden-power-station" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+        
+        <!-- Related Project 3 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+            <img src="https://placehold.co/600x400/b54240/FFFFFF?text=Ingula" alt="Ingula" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-2">Ingula</h3>
+                <p class="text-gray-700 mb-4">Excavating and dumping material within the Bramhoek Dam using barge-mounted excavators.</p>
+                <a href="/projects/ingula" class="text-primary hover:text-primary-dark font-medium">View Project &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-white rounded-lg shadow-md p-8 text-center" data-animate>
+    <h2 class="text-2xl font-bold text-primary mb-4">Need Specialized Dredging for Critical Infrastructure?</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+        Contact our team to discuss how T&T Marine can provide tailored solutions for your complex dredging and marine construction needs.
+    </p>
+    <div>
+        <a href="/contact" class="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4">
+            Contact Us
+        </a>
+        <a href="/services/dredging" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300">
+            View Dredging Services
+        </a>
+    </div>
+</section>
+
+{% else %}
+<!-- Default Project Content -->
+<section class="bg-white rounded-lg shadow-md p-8 mb-8 text-center" data-animate>
+    <svg class="w-24 h-24 text-primary mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
+    <h2 class="text-2xl font-bold text-primary mb-4">Project Details Coming Soon</h2>
+    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+        We're currently updating the detailed information for this project. Please check back soon or contact us for specific information about this project.
+    </p>
+    <div>
+        <a href="/contact" class="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4">
+            Contact Us
+        </a>
+        <a href="/projects" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300">
+            Back to Projects
+        </a>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,847 @@
+{% extends "base.html" %}
+
+{% block title %}Hydrographic Surveys - T&T Marine{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative h-[600px] mb-40 overflow-hidden rounded-xl shadow-2xl" data-animate="fade-in">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary"></div>
+    
+    <!-- Animated particles overlay -->
+    <div class="absolute inset-0 z-5">
+        <div class="particle absolute w-2 h-2 bg-white/30 rounded-full animate-pulse" style="top: 20%; left: 16%; animation-delay: 0s;"></div>
+        <div class="particle absolute w-1 h-1 bg-white/40 rounded-full animate-pulse" style="top: 65%; left: 84%; animation-delay: 1.5s;"></div>
+        <div class="particle absolute w-3 h-3 bg-white/20 rounded-full animate-pulse" style="top: 82%; left: 14%; animation-delay: 2.3s;"></div>
+        <div class="particle absolute w-1 h-1 bg-white/50 rounded-full animate-pulse" style="top: 35%; left: 76%; animation-delay: 0.9s;"></div>
+        <div class="particle absolute w-2 h-2 bg-white/35 rounded-full animate-pulse" style="top: 50%; left: 45%; animation-delay: 1.9s;"></div>
+    </div>
+    
+    <!-- Wave overlay at bottom -->
+    <div class="absolute bottom-0 left-0 right-0 z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-full h-20 text-white fill-current">
+            <path d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,202.7C672,224,768,256,864,250.7C960,245,1056,203,1152,181.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    
+    <div class="relative h-full flex flex-col justify-center items-center text-center text-white p-6 z-30">
+        <div class="mb-6" data-animate="fade-in" data-delay="100">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium">
+                <div class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                Precision Underwater Mapping & Bathymetric Surveys
+            </div>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white [text-shadow:_0_4px_8px_rgba(0,0,0,0.8)]" data-animate="slide-in-top" data-delay="200">
+            HYDROGRAPHIC
+            <div class="relative inline-block mt-2">
+                <span class="relative z-10">SURVEYS</span>
+                <span class="absolute bottom-2 left-0 w-full h-4 bg-gradient-to-r from-primary to-ocean-blue opacity-80 transform -skew-x-12 blur-sm"></span>
+                <span class="absolute bottom-2 left-0 w-full h-3 bg-gradient-to-r from-primary to-ocean-blue opacity-90 transform -skew-x-12"></span>
+            </div>
+        </h1>
+        
+        <p class="text-xl max-w-4xl mb-12 text-white [text-shadow:_0_1px_2px_rgba(0,0,0,0.7)] leading-relaxed" data-animate="fade-in" data-delay="400">
+            T&T Marine's fully equipped surveying department delivers precise underwater mapping and bathymetric surveys using state-of-the-art RTK GPS systems, single beam echo sounders, and advanced positioning technology. Essential for safe navigation, dredging operations, and marine construction projects.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-6 mt-6" data-animate="fade-in" data-delay="600">
+            <a href="#survey-systems" class="group relative bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-bold shadow-2xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl overflow-hidden">
+                <span class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span class="relative flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                    </svg>
+                    Our Equipment
+                </span>
+            </a>
+            <a href="#applications" class="group relative bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white hover:text-primary text-white px-10 py-5 rounded-xl text-lg font-bold shadow-2xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl">
+                <span class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Survey Applications
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Department Introduction -->
+<section class="container mx-auto px-4 mb-32 -mt-24 relative z-10" data-animate="fade-in">
+    <div class="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-12 border border-gray-100 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/5 to-ocean-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/5 to-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                <div class="lg:col-span-3">
+                    <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-6">
+                        <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                        Expert Leadership
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                        Professional Surveying Department
+                    </h2>
+                    <p class="text-xl leading-relaxed text-gray-700 font-light mb-6">
+                        T&T Marine's fully equipped surveying department is led by Robert Botha, bringing decades of expertise in hydrographic and bathymetric surveys. Our department combines advanced technology with experienced professionals to deliver precise underwater mapping essential for marine construction and navigation safety.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-600 mb-8">
+                        From pre-dredging surveys to post-construction verification, our comprehensive surveying capabilities support every phase of marine projects. We utilize the latest RTK GPS technology, single beam echo sounders, and motion compensation systems to ensure centimeter-level accuracy in challenging marine environments.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">±2cm</div>
+                            <p class="text-gray-600 font-semibold">RTK GPS Accuracy</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">600m</div>
+                            <p class="text-gray-600 font-semibold">Maximum Depth Range</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">24/7</div>
+                            <p class="text-gray-600 font-semibold">Survey Capability</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="{{ url_for('static', filename='images/hydrographic-surveys-department-overview.jpg') }}" alt="T&T Marine Survey Department" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                                <h3 class="text-white font-bold text-lg mb-2">Robert Botha</h3>
+                                <p class="text-white/90 text-sm">Head of Surveying Department</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/10 to-ocean-blue/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-tr from-ocean-blue/10 to-primary/10 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Survey Systems -->
+<section id="survey-systems" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Advanced Technology
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            STATE-OF-THE-ART SURVEY EQUIPMENT
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <!-- RTK GPS Systems -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/3 to-ocean-blue/3 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="{{ url_for('static', filename='images/hydrographic-surveys-rtk-gps-systems.jpg') }}" alt="RTK GPS Systems" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            📡 Precision Positioning
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h3 class="text-3xl font-bold text-primary mb-4">Etrac RTK GPS Dig Systems (2 Complete Units)</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        Our dual Etrac RTK GPS systems provide centimeter-level positioning accuracy essential for precise hydrographic surveys. Real-Time Kinematic positioning delivers instant, highly accurate coordinates, eliminating the need for post-processing and enabling real-time quality control during survey operations.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">RTK GPS Capabilities:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    <span class="font-medium">Horizontal Accuracy:</span> <span class="ml-2">±2cm</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    <span class="font-medium">Vertical Accuracy:</span> <span class="ml-2">±3cm</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    <span class="font-medium">Real-Time Updates:</span> <span class="ml-2">20Hz</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    <span class="font-medium">Range:</span> <span class="ml-2">Up to 20km from base</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Key Features:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Dual system redundancy
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Instant initialization
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Multi-constellation support
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    All-weather operation
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-primary/5 to-ocean-blue/5 p-6 rounded-xl mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            Survey Applications:
+                        </h4>
+                        <p class="text-gray-700">Precise vessel positioning • Real-time bathymetric mapping • Dredging guidance • Construction verification • Channel surveys • Harbor mapping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Survey Boat & Trimble System -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/3 to-primary/3 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-3xl font-bold text-primary mb-4">Survey Boat with Complete Trimble System & Base Station</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        Our dedicated survey vessel features a complete Trimble integrated surveying system with base station capability. This advanced platform combines precise positioning, motion compensation, and data acquisition in a single, highly efficient surveying solution designed for challenging marine environments.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Trimble System Features:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-ocean-blue rounded-full mr-3"></div>
+                                    <span class="font-medium">Integrated GNSS/INS</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-ocean-blue rounded-full mr-3"></div>
+                                    <span class="font-medium">Base Station Support</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-ocean-blue rounded-full mr-3"></div>
+                                    <span class="font-medium">Real-time Data Processing</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-ocean-blue rounded-full mr-3"></div>
+                                    <span class="font-medium">Multi-sensor Integration</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Survey Boat Capabilities:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Shallow water access
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Stable survey platform
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Extended operation range
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Professional crew space
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-ocean-blue/5 to-primary/5 p-6 rounded-xl mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <svg class="w-5 h-5 text-ocean-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                        Platform Advantages:
+                    </h4>
+                    <p class="text-gray-700">Integrated survey systems • Mobile base station • Real-time positioning • Comprehensive data acquisition • Professional survey-grade accuracy</p>
+                </div>
+                </div>
+                <div class="lg:col-span-2 order-1 lg:order-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="{{ url_for('static', filename='images/hydrographic-surveys-survey-boat-trimble.jpg') }}" alt="Survey Boat" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-ocean-blue/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            🚤 Mobile Survey Platform
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Echo Sounder & Measurement Systems -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="{{ url_for('static', filename='images/hydrographic-surveys-echo-sounder-cv100.jpg') }}" alt="Echo Sounder Equipment" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            🔊 Advanced Sonar
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h3 class="text-3xl font-bold text-green-600 mb-4">Single Beam Odom CV100 Echo Sounder System</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        Our state-of-the-art Teledyne Odom CV100 single beam echo sounder represents the pinnacle of depth measurement technology. This digital system eliminates traditional paper records in favor of precise PC-based data acquisition, delivering exceptional accuracy and reliability for bathymetric surveys.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Technical Specifications:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    <span class="font-medium">Depth Range:</span> <span class="ml-2">0.3m to 600m</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    <span class="font-medium">Accuracy:</span> <span class="ml-2">±0.01m + 0.1% depth</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    <span class="font-medium">Ping Rate:</span> <span class="ml-2">Up to 20Hz</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    <span class="font-medium">Resolution:</span> <span class="ml-2">0.01m</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Advanced Features:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                    Dual frequency capability
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                    Sound velocity compensation
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                    Heave compensation input
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                    Real-time data processing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-500/5 to-blue-500/5 p-6 rounded-xl mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                            Measurement Capabilities:
+                        </h4>
+                        <p class="text-gray-700">High-precision depth measurement • Multi-frequency operation • Digital data acquisition • Sound velocity correction • Motion compensation integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Supporting Equipment -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-purple-100 text-purple-600 text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
+            Supporting Technology
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            PRECISION MEASUREMENT SYSTEMS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-purple-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Sound Velocity Meter -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-dual-frequency-transducer.jpg') }}" alt="Dual Frequency Transducer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Critical for accurate depth calculations</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-purple-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Calibration
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-purple-600 mb-3">Sound Velocity Meter</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed text-sm">Measures water sound velocity to ensure accurate depth calculations by compensating for varying water conditions affecting acoustic signals.</p>
+                <ul class="space-y-1 mb-4">
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Temperature compensation
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Salinity adjustment
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Real-time correction
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Dual Frequency Transducer -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1547103106-9a0e718bb2d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Dual Frequency Transducer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Optimized for various water depths</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-ocean-blue/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Dual-Freq
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-ocean-blue mb-3">Dual Frequency Transducer</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed text-sm">Advanced transducer system offering both high and low frequency capabilities for optimal performance across different water depths and bottom conditions.</p>
+                <ul class="space-y-1 mb-4">
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        High frequency: 100-750kHz
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        Low frequency: 24-50kHz
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        Automatic selection
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Heave Compensation -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-heave-compensation.png') }}" alt="Heave Compensation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Corrects for vessel motion effects</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Motion Comp
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-green-600 mb-3">Heave Compensation</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed text-sm">Motion compensation system that corrects depth measurements for vessel heave, pitch, and roll to ensure accurate bathymetric data in rough sea conditions.</p>
+                <ul class="space-y-1 mb-4">
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        Real-time correction
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        TSS1 compatible
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        Wave effect elimination
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Dredger Systems -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-dredger-systems.jpg') }}" alt="Dredger Systems" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Dedicated dredging survey systems</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Dredging
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Complete Dredger Systems (2 Units)</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed text-sm">Specialized surveying systems designed specifically for dredging operations, providing real-time positioning and depth monitoring for dredging equipment.</p>
+                <ul class="space-y-1 mb-4">
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Real-time guidance
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Production monitoring
+                    </li>
+                    <li class="flex items-center text-gray-600 text-xs">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Quality control
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Applications -->
+<section id="applications" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-orange-100 text-orange-600 text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-orange-600 rounded-full mr-2"></div>
+            Survey Applications
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            HYDROGRAPHIC SURVEY APPLICATIONS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Application 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-pre-dredging.jpg') }}" alt="Pre-Dredging Surveys" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Essential baseline mapping before dredging operations</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Pre-Dredging
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Pre-Dredging Surveys</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Comprehensive baseline bathymetric mapping to establish existing conditions, calculate dredging volumes, and plan optimal dredging strategies for maximum efficiency.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
+                        Volume calculations
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
+                        Strategy planning
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
+                        Baseline establishment
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Application 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-navigation-safety.jpg') }}" alt="Navigation Safety" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Critical for safe maritime navigation</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-ocean-blue/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Navigation
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-ocean-blue mb-3">Navigation Safety Surveys</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Detailed underwater mapping to identify navigation hazards, update nautical charts, and ensure safe passage for commercial and recreational vessels.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-ocean-blue rounded-full mr-2"></div>
+                        Hazard identification
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-ocean-blue rounded-full mr-2"></div>
+                        Chart updates
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-ocean-blue rounded-full mr-2"></div>
+                        Safe passage routes
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Application 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-harbor-construction.jpg') }}" alt="Harbor Construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Foundation planning for marine infrastructure</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Construction
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-orange-600 mb-3">Harbor & Marina Construction</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Site assessment surveys for harbor development, marina construction, and marine infrastructure projects requiring detailed subsurface information.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></div>
+                        Foundation planning
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></div>
+                        Site assessment
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></div>
+                        Design support
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Application 4 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-quality-control.jpg') }}" alt="Quality Control" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Verification that design levels are achieved</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Quality Control
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-green-600 mb-3">Post-Construction Verification</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Quality control surveys to verify that construction work meets design specifications and ensure project completion standards are achieved.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        Design verification
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        Quality assurance
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        Compliance documentation
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Application 5 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-coastal-engineering.jpg') }}" alt="Coastal Engineering" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Supporting coastal protection projects</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-blue-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Coastal
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-600 mb-3">Coastal Engineering Studies</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Bathymetric surveys supporting coastal protection, beach nourishment, and erosion control projects requiring detailed shoreline and nearshore mapping.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        Erosion assessment
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        Protection design
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        Shoreline monitoring
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Application 6 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='images/hydrographic-surveys-application-environmental-monitoring.jpg') }}" alt="Environmental Monitoring" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Supporting environmental impact studies</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-purple-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Environmental
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-purple-600 mb-3">Environmental Monitoring</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Baseline and monitoring surveys for environmental impact assessments, habitat mapping, and regulatory compliance for marine development projects.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                        Impact assessment
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                        Habitat mapping
+                    </li>
+                    <li class="flex items-center text-gray-600 text-sm">
+                        <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                        Compliance monitoring
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advantages Section -->
+<section class="mb-32 px-4" data-animate="fade-in">
+    <div class="bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary text-white rounded-2xl shadow-2xl p-12 relative overflow-hidden">
+        <!-- Wave pattern -->
+        <div class="absolute top-0 left-0 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-20 -mt-1 text-ocean-dark fill-current opacity-30">
+                <path d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,234.7C560,224,640,224,720,229.3C800,235,880,245,960,250.7C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm text-primary-light text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary-light rounded-full mr-2"></div>
+                    Survey Excellence
+                </div>
+                <h2 class="text-5xl font-bold mb-6">Why Choose T&T Marine Hydrographic Surveys?</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary-light to-white mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Advantage 1 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Advanced Technology Integration</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Complete RTK GPS systems, Trimble positioning, and Odom CV100 echo sounders deliver centimeter-level accuracy with real-time quality control capabilities.
+                    </p>
+                </div>
+                
+                <!-- Advantage 2 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Expert Leadership</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Robert Botha leads our fully equipped surveying department with decades of experience in hydrographic and bathymetric survey operations across Southern Africa.
+                    </p>
+                </div>
+                
+                <!-- Advantage 3 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Comprehensive Accuracy</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Sound velocity compensation, heave correction, and dual frequency transducers ensure precise measurements in all marine conditions and water depths.
+                    </p>
+                </div>
+                
+                <!-- Advantage 4 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Real-Time Operations</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        RTK positioning and digital data acquisition provide instant results, enabling real-time decision making and immediate quality verification during surveys.
+                    </p>
+                </div>
+                
+                <!-- Advantage 5 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Redundant Systems</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Dual RTK GPS systems and multiple dredger configurations provide redundancy and backup capabilities ensuring uninterrupted survey operations.
+                    </p>
+                </div>
+                
+                <!-- Advantage 6 -->
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 border border-white/20 hover:bg-white/20">
+                    <div class="text-primary-light mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Proven Track Record</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        25+ years of successful marine projects with established quality standards, regulatory compliance, and client satisfaction across Southern Africa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

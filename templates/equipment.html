@@ -1,0 +1,706 @@
+{% extends "base.html" %}
+
+{% block title %}Our Equipment - T&T Marine{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative h-[500px] mb-32 overflow-hidden rounded-2xl shadow-2xl" data-animate="fade-in">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary"></div>
+    <div class="absolute inset-0 bg-black/20"></div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+    
+    <!-- Wave pattern -->
+    <div class="absolute bottom-0 left-0 w-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-20 text-white fill-current opacity-10">
+            <path d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,234.7C560,224,640,224,720,229.3C800,235,880,245,960,250.7C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+        </svg>
+    </div>
+    
+    <div class="relative h-full flex flex-col justify-center items-center text-center text-white p-6 z-20">
+        <div class="mb-6" data-animate="fade-in" data-delay="100">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 text-sm font-medium">
+                <div class="w-2 h-2 bg-primary-light rounded-full mr-3 animate-pulse"></div>
+                Advanced Technology
+            </div>
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white [text-shadow:_0_4px_8px_rgba(0,0,0,0.8)]" data-animate="slide-in-top" data-delay="200">
+            OUR EQUIPMENT
+        </h1>
+        
+        <p class="text-xl max-w-3xl mb-8 text-white/90 [text-shadow:_0_1px_2px_rgba(0,0,0,0.7)] leading-relaxed" data-animate="fade-in" data-delay="400">
+            State-of-the-art machinery for all marine operations. From amphibious excavators to cutting suction dredgers, our fleet delivers exceptional performance.
+        </p>
+    </div>
+</section>
+
+<!-- Equipment Introduction -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="bg-white rounded-2xl shadow-2xl p-12 relative overflow-hidden border border-gray-100">
+        <!-- Decorative elements -->
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/5 to-ocean-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/5 to-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                    Fleet Overview
+                </div>
+                <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                    SPECIALIZED MARINE EQUIPMENT
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                <div class="lg:col-span-3">
+                    <div class="space-y-6">
+                        <p class="text-xl leading-relaxed text-gray-700 font-light">
+                            At T&T Marine, we maintain a comprehensive fleet of specialized equipment designed to tackle the most challenging marine and dredging projects. Our investment in state-of-the-art machinery ensures we can deliver optimal results efficiently and safely.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600">
+                            From amphibious excavators to cutting suction dredgers, our equipment is maintained to the highest standards and operated by skilled professionals. This combination of advanced technology and expertise allows us to provide superior services across all our project categories.
+                        </p>
+                        <div class="bg-gradient-to-r from-primary/10 to-ocean-blue/10 p-6 rounded-xl">
+                            <p class="text-lg leading-relaxed text-gray-700 font-medium">
+                                Our equipment fleet represents cutting-edge technology in marine construction, with many pieces custom-modified for South African conditions and unique project requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="{{ url_for('static', filename='equipment-overview.jpg') }}" alt="T&T Marine Equipment" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h4 class="text-lg font-bold">Advanced Fleet</h4>
+                            <p class="text-sm opacity-90">Precision equipment & expert operation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced decorative elements -->
+                    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/10 to-ocean-blue/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-tr from-ocean-blue/10 to-primary/10 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipment Categories -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Equipment Types
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            EQUIPMENT CATEGORIES
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Category 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='equipment-dredging-category.jpg') }}" alt="Dredging Equipment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Core Equipment
+                </div>
+            </div>
+            <div class="p-8">
+                <h3 class="text-xl font-bold text-primary mb-3">Dredging Equipment</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Specialized machinery for efficient dredging operations in various environments.</p>
+                <a href="#dredging-equipment" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Details 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Category 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='equipment-excavators-category.jpg') }}" alt="Excavators" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-ocean-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute top-4 left-4 bg-ocean-blue/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Versatile
+                </div>
+            </div>
+            <div class="p-8">
+                <h3 class="text-xl font-bold text-primary mb-3">Excavators</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Standard and specialized excavators for versatile material handling and earthmoving.</p>
+                <a href="#excavators" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Details 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Category 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="{{ url_for('static', filename='equipment-survey-category.jpg') }}" alt="Survey Equipment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-purple-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute top-4 left-4 bg-purple-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    High-Tech
+                </div>
+            </div>
+            <div class="p-8">
+                <h3 class="text-xl font-bold text-primary mb-3">Survey Equipment</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Advanced technology for precise hydrographic and bathymetric surveys.</p>
+                <a href="#survey-equipment" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Details 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dredging Equipment -->
+<section id="dredging-equipment" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Dredging Fleet
+        </div>
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            DREDGING EQUIPMENT
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="space-y-12">
+        <!-- Equipment Item 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-csd-350.jpg') }}" alt="CSD 350" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            High Capacity
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">CSD 350</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our Cutting Suction Dredger (CSD) 350 is a powerful dredging solution capable of handling a wide range of materials. With its advanced cutting mechanism, it efficiently removes sediment and deposits from various underwater environments.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-primary/10 to-primary/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Powerful cutting mechanism</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>High-capacity pumping system</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Versatile operational capabilities</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Modular design for easy transport</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-ocean-blue/10 to-ocean-blue/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-ocean-blue rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Dredging depth: up to 9m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Production capacity: 350m³/h</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Total installed power: 450 kW</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Pipeline diameter: 350mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Item 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Cutter Head for Up to 9 MPA Material</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our specialized cutter head is designed to handle extremely tough materials up to 9 MPA in hardness. This robust attachment enables efficient dredging operations in challenging conditions where conventional equipment would struggle.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-green-500/10 to-green-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Hardened steel construction</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Optimized cutting pattern</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Replaceable cutting teeth</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Compatible with CSD 350</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-500/10 to-purple-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Diameter: 800mm</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Material capacity: up to 9 MPA</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Rotation speed: 35 RPM</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Power requirement: 120 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative order-1 lg:order-2">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-cutter-head.jpg') }}" alt="Cutter Head" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Heavy Duty
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Item 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-dop-pump.jpg') }}" alt="DOP Pump" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-indigo-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Versatile
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">DOP Pump</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our DOP (Dredging On Pontoon) Pump is a versatile submersible dredge pump that can be deployed in various configurations. It's ideal for projects requiring flexible dredging solutions in confined spaces or areas with limited access.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-indigo-500/10 to-indigo-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Compact, submersible design</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Hydraulic drive system</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Multiple attachment options</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Easy to transport and deploy</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-teal-500/10 to-teal-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Capacity: up to 250m³/h</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Discharge diameter: 250mm</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Max head: 25m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Power: 110 kW hydraulic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Excavators -->
+<section id="excavators" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-ocean-blue/10 text-ocean-blue text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-ocean-blue rounded-full mr-2"></div>
+            Excavator Fleet
+        </div>
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            EXCAVATORS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-ocean-blue to-primary mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="space-y-12">
+        <!-- Equipment Item 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-amphibious-excavator.jpg') }}" alt="Amphibious Excavator" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            ⭐ Unique in SA
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Amphibious CAT 320 DL Excavator on Floating Track Pontoons</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our amphibious excavator is a unique piece of equipment in South Africa, designed to operate effectively in both water and land environments. The floating track pontoons allow the machine to navigate through swampy areas, shallow water, and soft terrain that would be inaccessible to conventional excavators.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-orange-500/10 to-orange-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Amphibious capability</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Self-propelled in water</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Low ground pressure</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Customizable for specific sites</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-500/10 to-blue-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Base machine: CAT 320 DL</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Operating weight: 25 tons</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Max digging depth: 6.7m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Max reach: 9.9m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Item 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">CAT 320 Long Reach Excavator</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our CAT 320 Long Reach Excavator is specially designed for extended reach applications, allowing for operations at greater distances and depths than standard excavators. This capability is particularly valuable for dredging operations, river works, and projects requiring extended reach while maintaining stability.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-green-600/10 to-green-600/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-600 rounded-full mr-2"></span>Extended boom and arm</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-600 rounded-full mr-2"></span>Enhanced stability system</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-600 rounded-full mr-2"></span>Versatile attachment options</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-600 rounded-full mr-2"></span>Precise hydraulic control</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-600/10 to-purple-600/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-600 rounded-full mr-2"></span>Max reach: 15.5m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-600 rounded-full mr-2"></span>Max digging depth: 12m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-600 rounded-full mr-2"></span>Operating weight: 22 tons</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-600 rounded-full mr-2"></span>Engine power: 123 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative order-1 lg:order-2">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-long-reach-excavator.jpg') }}" alt="Long Reach Excavator" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-green-700/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-green-600/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Extended Reach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Item 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-hitachi-excavators.jpg') }}" alt="HITACHI Excavators" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-red-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-red-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Heavy Duty
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">HITACHI ZX800 and ZX850</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our fleet includes heavy-duty HITACHI ZX800 and ZX850 excavators, capable of handling the most demanding excavation tasks. These powerful machines deliver exceptional performance for large-scale dredging, earthmoving, and construction projects.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-red-500/10 to-red-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-red-500 rounded-full mr-2"></span>High-capacity buckets</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-red-500 rounded-full mr-2"></span>Powerful hydraulic system</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-red-500 rounded-full mr-2"></span>Durable construction</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-red-500 rounded-full mr-2"></span>Advanced operator controls</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-yellow-500/10 to-yellow-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
+                                Technical Specifications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-yellow-500 rounded-full mr-2"></span>Operating weight: 80-85 tons</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-yellow-500 rounded-full mr-2"></span>Bucket capacity: up to 5.0m³</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-yellow-500 rounded-full mr-2"></span>Max digging depth: 7.8m</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-yellow-500 rounded-full mr-2"></span>Engine power: 380-400 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Survey Equipment -->
+<section id="survey-equipment" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-purple-500/10 text-purple-500 text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+            Survey Technology
+        </div>
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            SURVEY EQUIPMENT
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-primary mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="space-y-12">
+        <!-- Equipment Item 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-bathymetric-survey.jpg') }}" alt="Bathymetric Survey Equipment" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-purple-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            High Precision
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Bathymetric Survey Systems</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our advanced bathymetric survey systems provide detailed mapping of underwater topography, ensuring accurate data for project planning and verification. These systems are essential for dredging operations, allowing us to precisely determine volumes and monitor progress.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-purple-500/10 to-purple-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>High-resolution depth measurements</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>GPS integration</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Real-time data processing</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Comprehensive mapping capabilities</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-indigo-500/10 to-indigo-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></div>
+                                Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Pre-dredging surveys</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Progress monitoring</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Final verification</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Volume calculations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equipment Item 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">RTK GPS Base Stations and Moving Base Applications</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our Real-Time Kinematic (RTK) GPS systems provide centimeter-level positioning accuracy for precise equipment guidance and survey operations. These systems are crucial for maintaining exact positioning during dredging, excavation, and construction activities.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-blue-600/10 to-blue-600/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-600 rounded-full mr-2"></span>Centimeter-level accuracy</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-600 rounded-full mr-2"></span>Real-time position corrections</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-600 rounded-full mr-2"></span>Multiple base station capability</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-600 rounded-full mr-2"></span>Integrated data management</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-teal-600/10 to-teal-600/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-teal-600 rounded-full mr-2"></div>
+                                Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-600 rounded-full mr-2"></span>Equipment positioning</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-600 rounded-full mr-2"></span>Dredging guidance</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-600 rounded-full mr-2"></span>Survey operations</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-600 rounded-full mr-2"></span>Site mapping and planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative order-1 lg:order-2">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='equipment-rtk-gps.jpg') }}" alt="RTK GPS Systems" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-700/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            GPS Technology
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipment Maintenance -->
+<section class="mb-16 px-4" data-animate="fade-in">
+    <div class="bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary text-white rounded-2xl shadow-2xl p-12 relative overflow-hidden">
+        <!-- Enhanced wave pattern -->
+        <div class="absolute top-0 left-0 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-24 -mt-1 text-ocean-dark fill-current opacity-30">
+                <path d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,234.7C560,224,640,224,720,229.3C800,235,880,245,960,250.7C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,0L1400,0C1360,320,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <!-- Enhanced decorative elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm text-primary-light text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary-light rounded-full mr-2"></div>
+                    Maintenance Excellence
+                </div>
+                <h2 class="text-5xl font-bold mb-6">EQUIPMENT MAINTENANCE & SUPPORT</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary-light to-white mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <p class="text-xl leading-relaxed text-white/90 font-light">
+                            At T&T Marine, we maintain all our equipment to the highest standards, ensuring reliability and performance on every project. Our dedicated maintenance team follows rigorous schedules and protocols to prevent downtime and extend equipment lifespan.
+                        </p>
+                        <p class="text-lg leading-relaxed text-white/80">
+                            Our workshop facilities at IFAFA Beach are equipped with specialized tools and technology for comprehensive equipment servicing, repairs, and custom modifications. This in-house capability allows us to respond quickly to maintenance needs and adapt equipment for specific project requirements.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center">
+                            <div class="w-3 h-3 bg-primary-light rounded-full mr-3"></div>
+                            Our Maintenance Services Include:
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-primary-light rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">Scheduled preventive maintenance</span>
+                            </div>
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">On-site emergency repairs</span>
+                            </div>
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-primary-light rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">Component rebuilding</span>
+                            </div>
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">Equipment modification</span>
+                            </div>
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-primary-light rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">Performance optimization</span>
+                            </div>
+                            <div class="flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-white/90 font-medium">Operator training</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="{{ url_for('static', filename='equipment-maintenance-workshop.jpg') }}" alt="T&T Marine Maintenance Workshop" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h4 class="text-lg font-bold">IFAFA Workshop</h4>
+                            <p class="text-sm opacity-90">Advanced maintenance facility</p>
+                        </div>
+                    </div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="{{ url_for('static', filename='equipment-servicing.jpg') }}" alt="Equipment Servicing" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h4 class="text-lg font-bold">Equipment Servicing</h4>
+                            <p class="text-sm opacity-90">Professional maintenance & repairs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

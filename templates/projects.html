@@ -1,0 +1,782 @@
+{% extends "base.html" %}
+
+{% block title %}Projects Archive - T&T Marine{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative h-[600px] mb-40 overflow-hidden rounded-xl shadow-2xl" data-animate="fade-in">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary"></div>
+    
+    <!-- Animated particles overlay -->
+    <div class="absolute inset-0 z-5">
+        <div class="particle absolute w-2 h-2 bg-white/30 rounded-full animate-pulse" style="top: 15%; left: 12%; animation-delay: 0s;"></div>
+        <div class="particle absolute w-1 h-1 bg-white/40 rounded-full animate-pulse" style="top: 65%; left: 82%; animation-delay: 1.5s;"></div>
+        <div class="particle absolute w-3 h-3 bg-white/20 rounded-full animate-pulse" style="top: 75%; left: 18%; animation-delay: 2.5s;"></div>
+        <div class="particle absolute w-1 h-1 bg-white/50 rounded-full animate-pulse" style="top: 25%; left: 75%; animation-delay: 0.8s;"></div>
+        <div class="particle absolute w-2 h-2 bg-white/35 rounded-full animate-pulse" style="top: 45%; left: 35%; animation-delay: 1.8s;"></div>
+    </div>
+    
+    <!-- Wave overlay at bottom -->
+    <div class="absolute bottom-0 left-0 right-0 z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-full h-20 text-white fill-current">
+            <path d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,202.7C672,224,768,256,864,250.7C960,245,1056,203,1152,181.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    
+    <div class="relative h-full flex flex-col justify-center items-center text-center text-white p-6 z-30">
+        <div class="mb-6" data-animate="fade-in" data-delay="100">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium">
+                <div class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                100+ Successful Projects Since 1999
+            </div>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white [text-shadow:_0_4px_8px_rgba(0,0,0,0.8)]" data-animate="slide-in-top" data-delay="200">
+            PROJECT 
+            <div class="relative inline-block mt-2">
+                <span class="relative z-10">PORTFOLIO</span>
+                <span class="absolute bottom-2 left-0 w-full h-4 bg-gradient-to-r from-primary to-ocean-blue opacity-80 transform -skew-x-12 blur-sm"></span>
+                <span class="absolute bottom-2 left-0 w-full h-3 bg-gradient-to-r from-primary to-ocean-blue opacity-90 transform -skew-x-12"></span>
+            </div>
+        </h1>
+        
+        <p class="text-xl max-w-4xl mb-12 text-white [text-shadow:_0_1px_2px_rgba(0,0,0,0.7)] leading-relaxed" data-animate="fade-in" data-delay="400">
+            Explore our extensive portfolio of marine construction, dredging, and infrastructure projects across Southern Africa. Each project represents our commitment to excellence, innovation, and sustainable solutions.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-6 mt-6" data-animate="fade-in" data-delay="600">
+            <a href="#featured-projects" class="group relative bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-bold shadow-2xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl overflow-hidden">
+                <span class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span class="relative flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    Featured Projects
+                </span>
+            </a>
+            <a href="/contact" class="group relative bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white hover:text-primary text-white px-10 py-5 rounded-xl text-lg font-bold shadow-2xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl">
+                <span class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                    Start Your Project
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Introduction -->
+<section class="container mx-auto px-4 mb-32 -mt-24 relative z-10" data-animate="fade-in">
+    <div class="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-12 border border-gray-100 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/5 to-ocean-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/5 to-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                <div class="lg:col-span-3">
+                    <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-6">
+                        <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                        Our Portfolio
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                        25+ Years of Marine Excellence
+                    </h2>
+                    <p class="text-xl leading-relaxed text-gray-700 font-light mb-6">
+                        T&T Marine has successfully completed a wide range of projects across South Africa and neighboring countries. Our diverse portfolio showcases our expertise in dredging, harbor construction, land reclamation, and specialized marine services.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-600 mb-8">
+                        Each project represents our commitment to excellence, innovation, and sustainable solutions. From complex industrial operations to environmental restoration initiatives, we approach every project with the same dedication to quality and client satisfaction.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">100+</div>
+                            <p class="text-gray-600 font-semibold">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">5</div>
+                            <p class="text-gray-600 font-semibold">Countries Served</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold bg-gradient-to-r from-primary to-ocean-blue bg-clip-text text-transparent">25+</div>
+                            <p class="text-gray-600 font-semibold">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="{{ url_for('static', filename='projects-introduction-overview.jpg') }}" alt="T&T Marine Projects" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/10 to-ocean-blue/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-tr from-ocean-blue/10 to-primary/10 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Categories -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Project Categories
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            SPECIALIZED SERVICES
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Category 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-72">
+                <img src="{{ url_for('static', filename='projects-category-harbor.jpg') }}" alt="Harbor Projects" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Harbor construction, maintenance, and expansion projects</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Core Service
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Harbor Projects</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Construction, maintenance, and expansion of harbor facilities and waterways across Southern Africa.</p>
+                <a href="#harbor-projects" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Projects 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Category 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-72">
+                <img src="{{ url_for('static', filename='projects-category-power-station.jpg') }}" alt="Power Station Projects" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Specialized services for power generation facilities</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Industrial
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Power Station Projects</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Specialized dredging and construction services for power generation facilities including Eskom projects.</p>
+                <a href="#power-station-projects" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Projects 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Category 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-72">
+                <img src="{{ url_for('static', filename='projects-category-mining.jpg') }}" alt="Mining Projects" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Mining waste management and slime dam services</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Environmental
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Mining Projects</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Dredging of slime dams, tailings ponds, and other mining-related environmental services.</p>
+                <a href="#mining-projects" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    View Projects 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section id="featured-projects" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Flagship Projects
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            FEATURED PROJECTS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <!-- Project 1 -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/3 to-ocean-blue/3 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80" alt="Durban Beach Feeding Scheme" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            ⭐ Flagship Project
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h3 class="text-3xl font-bold text-primary mb-4">Durban Beach Feeding Scheme</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        T&T Marine has been instrumental in supplying, commissioning, and managing the pumping of sand along the Durban beachfront to replenish sand removed by wave action. This ongoing project is critical for maintaining the iconic beaches of Durban and protecting coastal infrastructure.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Project Scope:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    Sand pumping system design
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    Equipment installation
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    Ongoing operation management
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                    Beach profile maintenance
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Key Achievements:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Sustained beach replenishment
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Coastal infrastructure protection
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Minimal environmental impact
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Continuous operation capability
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="/projects/durban-beach-feeding-scheme" class="group relative bg-gradient-to-r from-primary to-primary-dark text-white py-3 px-8 rounded-xl font-bold shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden inline-block">
+                        <span class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                        <span class="relative">View Project Details</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/3 to-primary/3 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-3xl font-bold text-primary mb-4">Koeberg Power Station (Eskom)</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        Our team conducted specialized dredging operations at the main intake basin of the Koeberg Nuclear Plant. This critical project required precision, stringent safety protocols, and minimal disruption to the power station's operations.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Project Scope:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                    Intake basin dredging
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                    Sediment removal and disposal
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                    Bathymetric surveys
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                                    Environmental monitoring
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Key Achievements:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Zero safety incidents
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    No operational disruption
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Completed ahead of schedule
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Improved water flow efficiency
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="/projects/koeberg-power-station" class="group relative bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 px-8 rounded-xl font-bold shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden inline-block">
+                        <span class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                        <span class="relative">View Project Details</span>
+                    </a>
+                </div>
+                <div class="lg:col-span-2 order-1 lg:order-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80" alt="Koeberg Power Station" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            ⚡ Critical Infrastructure
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12 relative overflow-hidden border border-gray-100 group transform transition-all duration-500 hover:shadow-3xl">
+        <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-gradient-to-tl from-green-500/5 to-ocean-blue/5 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-500"></div>
+        
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Walvis Bay" class="w-full h-80 object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-sm font-bold px-4 py-2 rounded-full">
+                            🌍 International
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h3 class="text-3xl font-bold text-primary mb-4">Namibia Projects - Walvis Bay</h3>
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        T&T Marine has undertaken multiple dredging and construction projects in Walvis Bay and surrounding areas in Namibia. These projects have contributed to the development and maintenance of vital port infrastructure in the region.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Project Scope:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Harbor dredging
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Channel maintenance
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Land reclamation
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Port infrastructure development
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-4 text-lg border-b border-gray-300 pb-2">Key Achievements:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Enhanced port accessibility
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Increased operational capacity
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    International project coordination
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                    Sustainable development practices
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="/projects/walvisbaai" class="group relative bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-8 rounded-xl font-bold shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden inline-block">
+                        <span class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                        <span class="relative">View Project Details</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Harbor Projects -->
+<section id="harbor-projects" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            HARBOR PROJECTS
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Harbor Project 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1578910820457-8fc2bf8c8cbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Richards Bay Salvage" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Complex marine salvage operations</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Salvage
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Richards Bay (Salvage)</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Assisted in the removal of coal from the Richards Bay Wreck Dredge, demonstrating our salvage capabilities in complex marine environments.</p>
+                <a href="/projects/richards-bay-salvage" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Harbor Project 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1541687546725-7184cd156def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Vaal Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Specialized trench excavation for pump stations</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-ocean-blue/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Infrastructure
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Vaal Project</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Digging a trench for a pump station intake using a specialized long reach excavator on a hydraulic jacked-up barge.</p>
+                <a href="/projects/vaal-project" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Harbor Project 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Vant's Drift" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">River diversion and bank upgrades</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Environmental
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Vant's Drift</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Detouring the Buffalo River to dewater and work on the river's rock bank, upgrading the suction point.</p>
+                <a href="/projects/vants-drift" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Power Station Projects -->
+<section id="power-station-projects" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            POWER STATION PROJECTS
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Power Station Project 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80" alt="Camden Power Station" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Dam restoration to original design levels</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Restoration
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Camden Power Station</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Dredging the dam to return it to original design levels, with material removal and loading onto dump trucks.</p>
+                <a href="/projects/camden-power-station" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Power Station Project 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Grootvlei" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Ash dam maintenance and reed removal</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Maintenance
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Grootvlei (Eskom)</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Removing reeds from ash dams and dredging excess ash using amphibious excavators to maintain operational efficiency.</p>
+                <a href="/projects/grootvlei" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Power Station Project 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1497436072909-f5e4be853b62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Ingula" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Precision barge-mounted excavation</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Precision Work
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Ingula</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Excavating and dumping material within the Bramhoek Dam using barge-mounted excavators for precise operations.</p>
+                <a href="/projects/ingula" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mining Projects -->
+<section id="mining-projects" class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            MINING PROJECTS
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Mining Project 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1582192408746-098f6c650e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Harmony Gold Mine" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Slime dam management and waste processing</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Waste Management
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Harmony Gold Mine (Welkom)</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Dredging slime dams, removing reeds, and pumping through pipelines to the client's receiving tank for effective waste management.</p>
+                <a href="/projects/harmony-gold-mine" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mining Project 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" alt="Vryheid Coal Mining" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Coal mining operational support</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Coal Mining
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Vryheid - Coal Mining Project</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Specialized dredging and excavation services for coal mining operations, enhancing operational efficiency.</p>
+                <a href="/projects/vryheid-coal-mining" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mining Project 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="relative overflow-hidden h-64">
+                <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Bosveld Phosphates" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                    <div class="p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <p class="font-medium">Environmental remediation and management</p>
+                    </div>
+                </div>
+                <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Environmental
+                </div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Bosveld Phosphates</h3>
+                <p class="text-gray-700 mb-6 leading-relaxed">Dredging affected dams and pumping via a 600m pipeline to designated dams, addressing environmental management requirements.</p>
+                <a href="/projects/bosveld-phosphates" class="inline-flex items-center text-primary hover:text-primary-dark font-semibold group-hover:translate-x-2 transition-all duration-300">
+                    Learn More 
+                    <svg class="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Approach -->
+<section class="mb-32 px-4" data-animate="fade-in">
+    <div class="bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary text-white rounded-2xl shadow-2xl p-12 relative overflow-hidden">
+        <!-- Wave pattern -->
+        <div class="absolute top-0 left-0 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-20 -mt-1 text-ocean-dark fill-current opacity-30">
+                <path d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,234.7C560,224,640,224,720,229.3C800,235,880,245,960,250.7C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm text-primary-light text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary-light rounded-full mr-2"></div>
+                    Our Process
+                </div>
+                <h2 class="text-5xl font-bold mb-6">Project Approach</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary-light to-white mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center group transform transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6">
+                        <div class="bg-white text-primary rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold mx-auto shadow-2xl transform transition-all duration-300 group-hover:shadow-3xl group-hover:-translate-y-2">
+                            1
+                        </div>
+                        <div class="absolute inset-0 bg-white/20 rounded-full w-20 h-20 mx-auto blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Assessment</h3>
+                    <p class="text-white/90 leading-relaxed">Thorough site evaluation and needs analysis to understand project requirements and challenges.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center group transform transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6">
+                        <div class="bg-white text-primary rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold mx-auto shadow-2xl transform transition-all duration-300 group-hover:shadow-3xl group-hover:-translate-y-2">
+                            2
+                        </div>
+                        <div class="absolute inset-0 bg-white/20 rounded-full w-20 h-20 mx-auto blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Planning</h3>
+                    <p class="text-white/90 leading-relaxed">Detailed project planning, resource allocation, and scheduling for optimal execution and efficiency.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center group transform transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6">
+                        <div class="bg-white text-primary rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold mx-auto shadow-2xl transform transition-all duration-300 group-hover:shadow-3xl group-hover:-translate-y-2">
+                            3
+                        </div>
+                        <div class="absolute inset-0 bg-white/20 rounded-full w-20 h-20 mx-auto blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Execution</h3>
+                    <p class="text-white/90 leading-relaxed">Implementation with expert teams and specialized equipment, with continuous monitoring and quality control.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center group transform transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6">
+                        <div class="bg-white text-primary rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold mx-auto shadow-2xl transform transition-all duration-300 group-hover:shadow-3xl group-hover:-translate-y-2">
+                            4
+                        </div>
+                        <div class="absolute inset-0 bg-white/20 rounded-full w-20 h-20 mx-auto blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Validation</h3>
+                    <p class="text-white/90 leading-relaxed">Comprehensive quality verification and project documentation to ensure all requirements are met.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

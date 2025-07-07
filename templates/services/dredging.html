@@ -1,0 +1,609 @@
+{% extends "base.html" %}
+
+{% block title %}Dredging Services - T&T Marine{% endblock %}
+
+{% block content %}
+<!--Hero Section -->
+<section class="relative h-[400px] mb-32 overflow-hidden rounded-2xl shadow-2xl" data-animate="fade-in">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary via-ocean-blue to-ocean-dark"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-60 h-60 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+    
+    <div class="relative h-full flex flex-col justify-center items-center text-center text-white p-6 z-20">
+     
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white [text-shadow:_0_4px_8px_rgba(0,0,0,0.8)]" data-animate="slide-in-top" data-delay="200">
+            DREDGING SERVICES
+        </h1>
+        
+        <p class="text-xl max-w-3xl mb-8 text-white/90 [text-shadow:_0_1px_2px_rgba(0,0,0,0.7)] leading-relaxed" data-animate="fade-in" data-delay="400">
+            Specialized dredging solutions for all marine environments. From cutting-edge suction dredgers to innovative amphibious equipment.
+        </p>
+    </div>
+</section>
+
+<!-- Service Overview -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="bg-white rounded-2xl shadow-2xl p-12 relative overflow-hidden border border-gray-100">
+        <!-- Decorative elements -->
+        <div class="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-primary/5 to-ocean-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr from-ocean-blue/5 to-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                    Core Expertise
+                </div>
+                <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                    COMPREHENSIVE DREDGING SOLUTIONS
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+                <div class="lg:col-span-2">
+                    <div class="space-y-6">
+                        <p class="text-xl leading-relaxed text-gray-700 font-light">
+                            T&T Marine offers a complete range of dredging services, utilizing advanced equipment and techniques to deliver efficient and environmentally responsible solutions. As South Africa's leading dredging contractor, we bring decades of experience to every project.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600">
+                            Our dredging capabilities extend from small-scale operations to large industrial projects, with specialized equipment selected to match the specific requirements of each site. We pride ourselves on finding innovative approaches to challenging dredging scenarios.
+                        </p>
+                        <div class="bg-gradient-to-r from-primary/10 to-ocean-blue/10 p-6 rounded-xl">
+                            <p class="text-lg leading-relaxed text-gray-700 font-medium">
+                                All our dredging operations are supported by our hydrographic surveying division, ensuring precise execution and verification of design levels. This integrated approach guarantees optimal results and client satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="{{ url_for('static', filename='images/dredging-overview-operations.jpg') }}" alt="T&T Marine Dredging Operations" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h4 class="text-lg font-bold">Precision Dredging</h4>
+                            <p class="text-sm opacity-90">Advanced equipment & techniques</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced decorative elements -->
+                    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/10 to-ocean-blue/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-tr from-ocean-blue/10 to-primary/10 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dredging Methods -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Advanced Techniques
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            OUR DREDGING METHODS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="space-y-12">
+        <!-- Method 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='images/dredging-cutting-suction-dredger.jpg') }}" alt="Cutting Suction Dredging" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            High Capacity
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Cutting Suction Dredgers</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our cutting suction dredgers are powerful machines designed to efficiently remove sediment, sand, gravel, and even harder materials from underwater environments. The cutter head breaks up the material, which is then pumped through a pipeline to the designated discharge area.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-primary/10 to-primary/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>High production capacity</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Suitable for various material types</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Precise depth control</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-primary rounded-full mr-2"></span>Continuous operation</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-ocean-blue/10 to-ocean-blue/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-ocean-blue rounded-full mr-2"></div>
+                                Ideal Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Harbor maintenance</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Channel deepening</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Land reclamation</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></span>Mining operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Auger Heads</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Auger head dredging is particularly effective for removing fine-grained, soft sediments in confined spaces. The rotating auger loosens and directs material toward the suction intake, ensuring efficient material removal with minimal turbidity.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-green-500/10 to-green-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Precise material removal</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Low turbidity operation</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Suitable for confined spaces</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-green-500 rounded-full mr-2"></span>Efficient for soft sediments</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-500/10 to-purple-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                                Ideal Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Marina maintenance</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Environmental remediation</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Confined area dredging</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-purple-500 rounded-full mr-2"></span>Silt removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative order-1 lg:order-2">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='images/dredging-auger-head.jpg') }}" alt="Auger Head Dredging" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Precision
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-2 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='images/dredging-excavator.jpg') }}" alt="Excavator Dredging" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Versatile
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">Excavating</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our excavator dredging operations utilize specialized long-reach or amphibious excavators to remove material directly from underwater environments. This method provides exceptional control and is particularly effective for projects requiring selective material removal or when dealing with debris-laden sediments.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-orange-500/10 to-orange-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Precise material extraction</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Ability to handle debris</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Selective dredging capability</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-orange-500 rounded-full mr-2"></span>Versatile positioning options</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-500/10 to-blue-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                Ideal Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Shoreline restoration</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Debris-laden areas</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Confined spaces</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>Hard material removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 4 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-8">
+                <div class="lg:col-span-3 order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-primary-dark transition-colors duration-300">DOP Pump Dredging</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Our DOP (Dredging On Pontoon) pump technology offers versatile dredging solutions through submersible pumps that can be deployed in various configurations. This approach provides exceptional flexibility and is ideal for projects with limited access or unique operational requirements.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gradient-to-r from-indigo-500/10 to-indigo-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></div>
+                                Key Features:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Highly versatile deployment</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Compact design</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Multiple attachment options</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></span>Suitable for remote locations</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-teal-500/10 to-teal-500/5 p-4 rounded-xl">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mr-2"></div>
+                                Ideal Applications:
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Limited access areas</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Industrial applications</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Tailings pond management</li>
+                                <li class="flex items-center"><span class="w-1 h-1 bg-teal-500 rounded-full mr-2"></span>Environmental cleanup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 relative order-1 lg:order-2">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <img src="{{ url_for('static', filename='images/dredging-dop-pump.jpg') }}" alt="DOP Pump Dredging" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-indigo-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Flexible
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Application Areas -->
+<section class="container mx-auto px-4 mb-32" data-animate="fade-in">
+    <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-primary/10 text-primary text-sm font-bold py-2 px-4 rounded-full mb-4">
+            <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Project Types
+        </div>
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+            DREDGING APPLICATION AREAS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-primary to-ocean-blue mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Area 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-primary/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Harbor Maintenance</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Regular dredging to maintain operational depths in harbors, ports, and marinas, ensuring safe navigation and optimal functionality for commercial and recreational vessels.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Channel depth maintenance
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Berth area clearance
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                        Navigation improvement
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Area 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-ocean-blue/20 to-ocean-blue/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-ocean-blue/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-ocean-blue text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            2
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Land Reclamation</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Creating new usable land from underwater or low-lying areas through strategic dredging and material placement, expanding land availability for development.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        Coastal expansion
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        Wetland restoration
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-ocean-blue rounded-full mr-2"></div>
+                        Development preparation
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Area 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500/20 to-green-500/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-green-500/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Mining Operations</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Specialized dredging for mining applications, including slime dam management, tailings pond maintenance, and mineral extraction from underwater deposits.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        Tailings management
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        Slime dam dredging
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-green-500 rounded-full mr-2"></div>
+                        Mineral extraction
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Area 4 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500/20 to-purple-500/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-purple-500/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            4
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Environmental Remediation</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Precision dredging to remove contaminated sediments and restore aquatic ecosystems, improving water quality and habitat conditions.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Contaminated sediment removal
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Habitat restoration
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-purple-500 rounded-full mr-2"></div>
+                        Ecosystem rehabilitation
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Area 5 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500/20 to-orange-500/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-orange-500/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            5
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Infrastructure Support</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Dredging services to support infrastructure projects such as bridge construction, pipeline installation, and underwater foundation preparation.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-orange-500 rounded-full mr-2"></div>
+                        Pipeline trenching
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-orange-500 rounded-full mr-2"></div>
+                        Foundation preparation
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-orange-500 rounded-full mr-2"></div>
+                        Construction support
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Area 6 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-6 hover:shadow-2xl border border-gray-100">
+            <div class="p-8">
+                <div class="mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-500/20 to-indigo-500/10 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-indigo-500/10 rounded-2xl animate-pulse"></div>
+                        <div class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold relative z-10">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Power Station Maintenance</h3>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Specialized dredging for power stations, including intake basin maintenance, ash dam management, and cooling water system optimization.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></div>
+                        Intake basin clearing
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></div>
+                        Ash dam management
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <div class="w-1 h-1 bg-indigo-500 rounded-full mr-2"></div>
+                        Operational efficiency
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dredging Process -->
+<section class="mb-16 px-4" data-animate="fade-in">
+    <div class="bg-gradient-to-br from-ocean-dark via-ocean-blue to-primary text-white rounded-2xl shadow-2xl p-12 relative overflow-hidden">
+        <!-- Enhanced wave pattern -->
+        <div class="absolute top-0 left-0 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-24 -mt-1 text-ocean-dark fill-current opacity-30">
+                <path d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,234.7C560,224,640,224,720,229.3C800,235,880,245,960,250.7C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,0L1400,0C1360,320,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <!-- Enhanced decorative elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm text-primary-light text-sm font-bold py-2 px-4 rounded-full mb-4">
+                    <div class="w-2 h-2 bg-primary-light rounded-full mr-2"></div>
+                    Step-by-Step Approach
+                </div>
+                <h2 class="text-5xl font-bold mb-6">OUR DREDGING PROCESS</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-primary-light to-white mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <!-- Step 1 -->
+                <div class="group text-center transform transition-all duration-500 hover:scale-105 relative">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:bg-white/30 transition-all duration-300 border border-white/30">
+                            1
+                        </div>
+                        <div class="absolute -inset-2 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                        <!-- Connector line -->
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Site Assessment</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Comprehensive evaluation of site conditions and project requirements.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="group text-center transform transition-all duration-500 hover:scale-105 relative">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:bg-white/30 transition-all duration-300 border border-white/30">
+                            2
+                        </div>
+                        <div class="absolute -inset-2 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                        <!-- Connector line -->
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Bathymetric Survey</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Detailed mapping of underwater topography to establish baseline conditions.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="group text-center transform transition-all duration-500 hover:scale-105 relative">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:bg-white/30 transition-all duration-300 border border-white/30">
+                            3
+                        </div>
+                        <div class="absolute -inset-2 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                        <!-- Connector line -->
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Method Selection</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Choosing the optimal dredging method and equipment for the specific project.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="group text-center transform transition-all duration-500 hover:scale-105 relative">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:bg-white/30 transition-all duration-300 border border-white/30">
+                            4
+                        </div>
+                        <div class="absolute -inset-2 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                        <!-- Connector line -->
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Dredging Operations</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Executing the dredging work with continuous monitoring and quality control.
+                    </p>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="group text-center transform transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:bg-white/30 transition-all duration-300 border border-white/30">
+                            5
+                        </div>
+                        <div class="absolute -inset-2 bg-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Verification Survey</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Final bathymetric survey to confirm achievement of design specifications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
